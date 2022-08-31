@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    align-items: center;
+    justify-content: center;
+    font-family: "Red Hat Display",sans-serif;
+    background-color: #F0E2D7;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 50px 0 0 0;
+}
+.image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: url(/images/pattern-background-mobile.svg) no-repeat
+ center/cover;
+height: 400px;
+}
+button{
+    font-family:"Red Hat Display",sans-serif ;
+}
+.btn{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all ease-in-out;
+}
+p{
+    font-size: 16px;
+    line-height: 1.6;
+    color: #869fa7;
+}
+.b-c{
+    background-color: transparent;
+    color:  #0096FF;
+    text-decoration: underline;
+}
+.b1{
+    padding: 10px;
+    background-color: #4428a8;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.b2{
+    color: #869fa7;
+    background: transparent;
+}
+.b2:hover{
+    color: hsl(228,47%,23%);
+}
+.b1:hover,
+.b-c:hover{
+    opacity: 0.8;
+}
+.details .bs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.details{
+    padding-bottom: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px hsl(228,45%,44%,0.175);
+}
+h1{
+    color: hsl(228,47%,23%);
+    margin: 10px 0;
+
+}
+.details img.hero{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.details .anual{
+    margin: 30px auto;
+    padding: 10px;
+    background-color: #edf0f1;
+    width: 90%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.details .anual article{
+    display: flex;
+}
+.details .anual article img{
+    margin-right: 10px;
+}
+
+@media (min-width:768px) {
+    .image{
+        background: url(/images/pattern-background-desktop.svg) no-repeat
+        center/cover;
+        height: 50vh;
+    }
+    .container{
+        width: 500px;
+    }
+}
